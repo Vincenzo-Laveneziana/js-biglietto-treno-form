@@ -27,6 +27,18 @@ bottoneGenera.addEventListener('click',
         var fasciaEta = document.getElementById('fascia-eta').value;
         //console.log(fasciaEta); 
 
+         // Controllo compilazione campi e Mostra biglietto
+         if ((nome != 0) && (kmDaPercorrere != 0) ){
+            container.className = 'show';
+        } else if ((nome == 0) && (kmDaPercorrere == 0)){
+            alert( "Assicurati di aver compilato i campi");
+        } else if ((nome == "") && (nome >= 0)){
+            alert( "Assicurati di aver compilato il campo nome cognome ");
+        } else if (kmDaPercorrere == 0){
+            alert( "Assicurati di aver compilato il km da percorrere");
+        }
+        
+
         // Calcolo biglietto
         var prezzoKm = 0.21;
         var costoBiglietto = prezzoKm * kmDaPercorrere;
@@ -59,12 +71,49 @@ bottoneGenera.addEventListener('click',
         document.getElementById('codice-cp').innerHTML = codiceCp;
         document.getElementById('costo').innerHTML = costoBiglietto;
 
-        // Mostra biglietto
-        container.className = 'show';
     }   
 );
 
 // Reset biglietto
+bottoneAnnulla.addEventListener('click',
+    function() {
+        // Ottieni valori input utente e resettali 
+        var nome = document.getElementById('nome').value = '';
+        var kmDaPercorrere = document.getElementById('km').value = '';
+        var fasciaEta = document.getElementById('fascia-eta'). value = 'minorenne';
+
+        // Resettiamo valori nella pagina
+        document.getElementById('nome-passeggero').innerHTML = '';
+        document.getElementById('offerta-applicata').innerHTML = '';
+        document.getElementById('carrozza').innerHTML = '';
+        document.getElementById('codice-cp').innerHTML = '';
+        document.getElementById('costo').innerHTML = '';
+
+         // Nasondi biglietto
+        container.className = 'hidden'
+
+    };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)
 
 
 
