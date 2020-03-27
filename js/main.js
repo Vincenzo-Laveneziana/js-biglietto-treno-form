@@ -91,7 +91,7 @@ bottoneAnnulla.addEventListener('click',
 
          // Nascondi biglietto
         container.className = 'hiddenDisplay'
-        dati.className = 'showDisplay'
+        dati.className = 'show'
 
     }
 
