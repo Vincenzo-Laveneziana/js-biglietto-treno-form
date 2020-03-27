@@ -29,7 +29,7 @@ bottoneGenera.addEventListener('click',
          // Controllo compilazione campi e Mostra biglietto
          if ((nome != 0) && (kmDaPercorrere != 0) ){
             dati.className = 'hiddenDisplay';
-            container.className = 'show';
+            container.className =  ' show';
             
         } else if ((nome == 0) && (kmDaPercorrere == 0)){
             alert( "Assicurati di aver compilato i campi");

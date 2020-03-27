@@ -34,6 +34,18 @@ main{
     align-items: center;
 }
 
+.show {
+    transition: opacity 2s;
+    opacity: 1;
+}
+
+.hiddenDisplay {
+    transition: opacity 2s;
+    opacity: 0;
+    visibility: hidden;
+   
+}
+
 
 
 
@@ -54,7 +66,7 @@ main{
 
 .wrapper{
     width: 500px;
-    min-height: 200px;
+    height: 350px;
     flex-direction: column;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.7);
     border-radius: 5px ;
@@ -75,37 +87,49 @@ main{
     font-size: 20px;
 }
 
+#dati{
+    position: absolute;
+    left: 100px;
+}
+
+.wrapper > .row{
+    position: absolute;
+    bottom: 5px;
+    left: 200px;
+}
+
 .row{
     flex-direction: column;
     text-align: center;
 }
 
 .col{
-    padding: 5px 0;
+    padding: 10px 0;
 }
 
 .col label{
     font-weight: bold;
     display: block;
+    padding-bottom: 5px;
 }
 
-.col input{
+.col input,
+.col select{
     width: 300px;
+    padding: 10px;
+    border: 0;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.7);
+}
+
+#biglietto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 
 
-.show {
-    opacity: 1;
-}
 
-.hidden {
-    opacity: 0;
-}
-
-.hiddenDisplay {
-    display: none;
-}
 
 /* foot */
 #foot{
