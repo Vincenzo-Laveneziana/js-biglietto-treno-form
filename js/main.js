@@ -32,11 +32,11 @@ bottoneGenera.addEventListener('click',
             container.className =  ' show';
             
         } else if ((nome == 0) && (kmDaPercorrere == 0)){
-            alert( "Assicurati di aver compilato i campi");
+            alert( "Assicurati di aver compilato tutti i campi");
         } else if ((nome == "")){
-            alert( "Assicurati di aver compilato il campo nome cognome ");
+            alert( "Assicurati di aver compilato il campo Nome Cognome ");
         } else if (kmDaPercorrere == 0){
-            alert( "Assicurati di aver compilato il km da percorrere");
+            alert( "Assicurati di aver compilato il campo dei Km da percorrere");
         }
 
         // Calcolo biglietto

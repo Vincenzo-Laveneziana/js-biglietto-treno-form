@@ -1,18 +1,29 @@
 @media (min-width: 576px) { 
-
+  .wrapper{
+    transition: all 1s;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-
+  .wrapper{
+    transform: scale(1.1);
+    transition: all 1.5s;
+  }
  }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-
+  .wrapper{
+    transform: scale(1.2);
+    transition: all 1.5s;
+  }
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-
+  .wrapper{
+    transform: scale(1.3);
+    transition: all 1.5s;
+  }
  }

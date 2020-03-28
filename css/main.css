@@ -34,24 +34,31 @@ main{
     align-items: center;
 }
 
-.show {
+.show{
     transition: opacity 2s;
     opacity: 1;
 }
 
-.hiddenDisplay {
+.hiddenDisplay{
     transition: opacity 2s;
     opacity: 0;
     visibility: hidden;
-   
 }
 
+.btn{
+    border: 0;
+    padding: 10px 20px;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.5);
+    border-radius: 5px ;
+    margin: 15px;
+    text-transform: uppercase;
+}
 
 
 
 /* header */
 
-#head {
+#head{
     background: white;
     height: 80px;
     width: 100%;
@@ -65,37 +72,35 @@ main{
 /* Main */
 
 .wrapper{
-    width: 500px;
-    height: 350px;
+    width: 550px;
+    min-height: 370px;
     flex-direction: column;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.7);
     border-radius: 5px ;
     background: #F8F8F8;
-    padding: 40px 10px 10px;
+    padding: 35px 10px 10px;
     position: relative;
 }
 
 .wrapper h1{
+    text-align: center;
     color: white;
     padding: 5px;
     background: #C41329;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.7);
-    border-radius: 5px ;
+    border-radius: 5px;
     position: absolute;
+    width: 65%;
     top: 0;
-    transform: translate(25% , -50%);
+    left: 50%;
+    transform: translate(-50% , -50%);
     font-size: 20px;
 }
 
 #dati{
     position: absolute;
-    left: 100px;
-}
-
-.wrapper > .row{
-    position: absolute;
-    bottom: 5px;
-    left: 200px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .row{
@@ -127,8 +132,58 @@ main{
     text-align: center;
 }
 
+#biglietto > h2{
+    color: #056767;
+    padding: 5px;
+}
+
+#biglietto > h3{
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.contenuti .nome > h3{
+    color: #C41329;
+    padding: 5px;
+}
+
+.offerta table{
+    flex-direction: column;
+}
 
 
+.offerta thead{
+    padding: 20px 0 10px;
+}
+
+.offerta table tr{
+    display: flex;
+}
+
+.offerta table th,
+.offerta table td{
+    display: flex;
+    flex-basis: calc(100% /4);
+    align-items: center;
+    justify-content: space-around;
+ }
+ 
+.offerta table td{
+color: #C41329;
+}
+
+.wrapper > .row{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#bottoneGenera{
+    background: hsl(353, 72%, 55%);
+    color: white;
+}
 
 
 /* foot */
@@ -136,4 +191,9 @@ main{
     height: 80px;
     width: 100%;
     background: white;
+    flex-direction: column;
+}
+
+#foot h2{
+    color: #056767;
 }
